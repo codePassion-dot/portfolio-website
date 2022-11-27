@@ -14,11 +14,11 @@ export default component$(() => {
           <Slot />
         </section>
       </main>
-      <footer className="flex flex-col items-center justify-center bg-grayish-dark-blue py-14">
-        <Logo classes="fill-white" />
-        <section class="mb-10 gap-8">
+      <footer className="flex flex-col items-center justify-center bg-grayish-dark-blue py-14 md:flex-row md:justify-between md:px-9 md:py-6">
+        <section class="mb-10 flex flex-col items-center gap-8 md:mb-0 md:mt-0 md:flex-row">
+          <Logo classes="fill-white mb-2" />
           {pages.map((page) => (
-            <p class="mt-8 text-center text-xs font-normal uppercase tracking-widest text-white">
+            <p class="text-center text-xs font-normal uppercase tracking-widest text-white">
               {page}
             </p>
           ))}
