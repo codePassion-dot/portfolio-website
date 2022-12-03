@@ -8,7 +8,7 @@ export default component$(() => {
 
   return (
     <>
-      <main class="flex flex-col p-8">
+      <main class="flex flex-col p-8 lg:justify-center xl:px-24 2xl:px-52">
         <Header />
         <section>
           <Slot />
